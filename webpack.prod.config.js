@@ -2,11 +2,15 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  // entry: './src/main.js',
+  entry: {
+    app: './src/main.js',
+    vendor: ['vue', 'vuex', 'moment', 'underscore']
+  },
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
-    filename: 'build.js'
+    path: path.resolve(__dirname, '../web/js/leave'),
+    publicPath: '/js/leave/',
+    filename: 'app.js'
   },
   resolve: {
     extensions: ['', '.js', '.vue']
@@ -68,6 +72,7 @@ if (process.env.NODE_ENV === 'production') {
         warnings: false
       }
     }),
-    new webpack.optimize.OccurenceOrderPlugin()
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.CommonsChunkPlugin('vendor',  'vendor.js')
   ])
 }

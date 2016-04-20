@@ -1,0 +1,255 @@
+@charset "utf-8";
+.clear {
+    clear: both
+}
+
+input {
+    -webkit-appearance: none;
+    outline: none;
+    border: 0
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    -webkit-appearance: none;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.25em;
+    min-width: 320px;
+    background-color: #f0f0f0;
+    font-family: "微软雅黑";
+    max-width: 100%;
+    padding-bottom: 50px;
+    margin: 0;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+ul{
+   list-style: none;
+}
+.clearfix {
+    display: inline-block;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+.head {
+    background-color: #006bb9;
+    width: 100%;
+    height: 45px;
+    border-bottom: solid 1px #2d63c3;
+}
+
+.top{
+    float: left;
+    height: 44px;
+    width: 100%;
+    font-size: 1.5em;
+    line-height: 44px;
+    color: #FFF;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+.banner {
+    display: block;
+    margin: 0 auto;
+}
+
+/*后加的*/
+.footer {
+    width: 100%;
+    height: 47px;
+    border-top: solid 1px #cacaca;
+    background-color: #fafafa;
+    position: fixed;
+    bottom: 0;
+}
+.footer a{
+    display: block;
+    width: 33%;
+    float: left;
+    text-align: center;
+    line-height: 47px;
+    color: #333333;
+}
+.bottom2 {
+    border-right: solid 1px #bfbfbf;
+    border-left:solid 1px #bfbfbf ;
+}
+/*main*/
+.main{
+    width: 86%;
+    margin-left: 7%;
+    margin-top: 30px;
+}
+.main_list{
+    width: 100%;
+}
+.main_txt{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.main_p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #006bb9;
+}
+.main_tit{
+     font-size: 16px;
+     margin-bottom: 15px;
+     color: #006bb9;
+ }
+.main_tit span{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+    display: block;
+    width: 60%;
+    float: right;
+}
+.main_txt input{
+    width: 90%;
+    padding: 15px 5%;
+}
+.btn{
+    width: 100%;
+    margin-top: 10%;
+}
+.btn button{
+    width: 40%;
+    border: none;
+    padding: 10px;
+    color: #fff;
+}
+.list{
+    width: 100%;
+}
+.list li{
+    width: 96%;
+    background-color: #fff;
+    padding:20px 2% 0px 2%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    border-top:1px solid #d9d9d9;
+}
+.people{
+    font-size: 20px;
+    color:#000 ;
+    margin-bottom: 10px;
+}
+.list_txt{
+    width: 100%;
+    line-height: 40px;
+    color: #abaaaa;
+    font-size: 16px;
+}
+.border-left-right{
+    border-right: 1px solid #dadada;
+    border-left:1px solid #dadada ;
+}
+.list_txt span{
+    display: block;
+    float: left;
+    font-size: 15px;
+    text-align: center;
+}
+.time_reply{
+    text-align: right;
+    color: #fff;
+    background-color: #ffb17f;
+    font-size: 16px;
+    padding: 0 2px;
+    margin-left: 2%;
+}
+.time_reply2{
+    text-align: right;
+    color: #666;
+   /* background-color: #f0f0f0;*/
+    font-size: 16px;
+    padding: 0 15px 0 2px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+}
+.full_width{
+    width: 100%;
+}
+.remain_days{
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+    border-radius: 88px;
+    border: 1px solid #bbb;
+}
+.leave_days{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.leave_days p{
+    line-height: 50px;
+    font-size: 18px;
+    color: #706557;
+    background: #dedcdc;
+}
+.second_nav{
+    width: 33%;
+    position: fixed;
+    bottom: 47px;
+    text-align: center;
+    background-color: #fafafa;
+    border: solid 1px #bfbfbf;
+    border-left: none;
+
+}
+.second_nav a{
+    display: block;
+    width: 100% !important;
+    color: #666 !important;
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+.second_nav a:hover{
+    color: #fff;
+    background-color: #ffb17f;
+}
+/*main*/
+@media screen and (min-width: 480px) {
+    .body {
+        font-size: 21px
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .body {
+        font-size: 28px
+    }
+}
+
+
